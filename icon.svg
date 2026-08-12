@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5b8a72"/>
+      <stop offset="1" stop-color="#2f553e"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0dcae"/>
+      <stop offset="1" stop-color="#d8bb8e"/>
+    </linearGradient>
+    <linearGradient id="penBody" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0b0b0b"/>
+      <stop offset="0.5" stop-color="#3a3a3a"/>
+      <stop offset="1" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <linearGradient id="nib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eeeeee"/>
+      <stop offset="1" stop-color="#8a8a8a"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3.5"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="paperTexture" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5"/>
+      <feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.38  0 0 0 0 0.22  0 0 0 0.15 0"/>
+      <feComposite in2="SourceGraphic" operator="in"/>
+    </filter>
+    <radialGradient id="vignette" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0.6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#5a4020" stop-opacity="0.18"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 绿色圆角背景 -->
+  <rect width="256" height="256" rx="52" ry="52" fill="url(#green)"/>
+
+  <!-- 牛皮纸信纸（竖向长方形，微倾） -->
+  <g transform="rotate(-4 128 128)" filter="url(#shadow)">
+    <rect x="56" y="44" width="144" height="168" rx="2" fill="url(#paper)"/>
+    <rect x="56" y="44" width="144" height="168" rx="2" fill="url(#paper)" filter="url(#paperTexture)" opacity="0.55"/>
+    <rect x="56" y="44" width="144" height="168" rx="2" fill="url(#vignette)"/>
+
+    <!-- 左侧红色装订线（信纸感） -->
+    <line x1="74" y1="44" x2="74" y2="212" stroke="#b8453a" stroke-width="1.4" opacity="0.75"/>
+    <line x1="74" y1="44" x2="74" y2="212" stroke="#b8453a" stroke-width="0.4" opacity="0.5" stroke-dasharray="2 3"/>
+
+    <!-- 横向信纸线 -->
+    <g stroke="#a88a5a" stroke-width="0.9" opacity="0.4">
+      <line x1="80" y1="84"  x2="188" y2="84"/>
+      <line x1="80" y1="110" x2="188" y2="110"/>
+      <line x1="80" y1="136" x2="188" y2="136"/>
+      <line x1="80" y1="162" x2="188" y2="162"/>
+      <line x1="80" y1="188" x2="188" y2="188"/>
+    </g>
+
+    <!-- 手写墨迹：self-realization，停在第一行结尾 -->
+    <text x="80" y="84"
+          font-family="'Segoe Script', 'Segoe Print', 'Bradley Hand ITC', cursive"
+          font-size="22"
+          font-style="italic"
+          fill="#141414"
+          textLength="104" lengthAdjust="spacingAndGlyphs"
+          opacity="0.88">self-realization</text>
+  </g>
+
+  <!-- 钢笔：笔尖落在 "self-realization" 结尾处（约 188, 80） -->
+  <g transform="rotate(42 188 80)">
+    <!-- 笔帽顶 -->
+    <rect x="-9" y="-160" width="18" height="7" rx="3" fill="#070707"/>
+    <!-- 笔身 -->
+    <path d="M -8 -153 L 8 -153 L 8 -10 L -8 -10 Z" fill="url(#penBody)"/>
+    <!-- 笔夹 -->
+    <rect x="3" y="-148" width="2.4" height="34" rx="1" fill="#9a9a9a"/>
+    <!-- 金色装饰环 -->
+    <rect x="-8" y="-100" width="16" height="3.2" fill="#c9a84c"/>
+    <rect x="-8" y="-95.5" width="16" height="1.1" fill="#e8c878"/>
+    <!-- 笔尖（银色 nib），尖端在原点 (0,0) -->
+    <path d="M -8 -10 L 0 4 L 8 -10 Z" fill="url(#nib)"/>
+    <line x1="0" y1="-10" x2="0" y2="3" stroke="#5a5a5a" stroke-width="0.7"/>
+    <circle cx="0" cy="-4" r="1.8" fill="#141414"/>
+    <!-- 刚停笔的一小滴墨点 -->
+    <circle cx="0" cy="5.5" r="1.5" fill="#0a0a0a" opacity="0.85"/>
+  </g>
+</svg>
