@@ -1,10 +1,10 @@
-# 字己 · 私人的文字档案馆
-
-> 本地优先的个人文字档案。用文字记录自己，在回看中认识自己和理解自己，发现生命的留痕。
-
 <p align="center">
   <img src="assets/icon.png" alt="字己" width="96" height="96">
 </p>
+
+# 字己 · 私人的文字档案馆
+
+> 本地优先的个人文字档案。用文字记录自己，在回看中认识自己和理解自己，发现生命的留痕。
 
 <p align="center">
   <img src="docs/screenshot.png" alt="字己产品界面" width="85%">
