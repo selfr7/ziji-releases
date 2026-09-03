@@ -6,6 +6,10 @@
   <img src="assets/icon.png" alt="字己" width="96" height="96">
 </p>
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="字己产品界面" width="85%">
+</p>
+
 ---
 
 ## 开发者想说的话
