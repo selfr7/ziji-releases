@@ -71,7 +71,7 @@
 1. 点击提示窗中的 **「更多信息」**
 2. 点击 **「仍要运行」**
 
-![Windows SmartScreen 提示：点击「更多信息」→「仍要运行」](docs/smartscreen-install.gif)
+<img src="docs/smartscreen-install.gif" alt="Windows SmartScreen 提示：点击「更多信息」→「仍要运行」" width="60%">
 
 ---
 
@@ -101,7 +101,6 @@ word_count: 300
 | 文章文件 | 用户自选文件夹 |
 | 编辑备份 | `<文章文件夹>/.selfrblog-backups/` |
 | 回收站 | `<文章文件夹>/.selfrblog-trash/` |
-| 草稿 | 应用内部存储 |
 
 ---
 
