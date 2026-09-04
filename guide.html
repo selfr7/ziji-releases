@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用说明 · 字己</title>
+  <meta name="description" content="字己使用说明：安装、第一次使用、写作、整理回看、数据与备份、常见问题。">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/icon.png" alt="字己" class="brand-icon">
+        <span>字己</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#features">功能</a>
+        <a href="guide.html">使用说明</a>
+        <a href="index.html#download" class="nav-download">下载</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide">
+    <h1>使用说明</h1>
+    <p class="guide-sub">从安装到开始写第一篇文章，大约需要两分钟。</p>
+
+    <section class="guide-section">
+      <h2>1. 安装</h2>
+      <ol>
+        <li>从<a href="https://github.com/selfr7/ziji-releases/releases/latest" target="_blank" rel="noopener">下载页面</a>获取 <code>ZiJi-Setup-*.exe</code>（版本号以后缀区分，选最新的）。</li>
+        <li>双击运行，按提示完成安装。</li>
+        <li>安装完成后从开始菜单或桌面图标启动。</li>
+      </ol>
+      <p class="tip">Windows 10 以上即可，无需安装其他依赖。如果你的系统没有 WebView2 组件，安装包会自动处理。</p>
+    </section>
+
+    <section class="guide-section">
+      <h2>2. 第一次使用：选择你的文章文件夹</h2>
+      <p>启动后，应用会请你选择一个文件夹来存放文章。这个文件夹完全归你管：</p>
+      <ul>
+        <li>每篇文章以 <code>.md</code> 文件保存在里面，用记事本都能打开；</li>
+        <li>想备份，直接复制整个文件夹；</li>
+        <li>想换电脑，把文件夹拷过去，在新电脑的字己里重新选中它即可。</li>
+      </ul>
+      <p class="tip">建议选一个你会定期备份的位置（比如网盘同步目录），这样连备份都省了。</p>
+    </section>
+
+    <section class="guide-section">
+      <h2>3. 日常写作</h2>
+      <ul>
+        <li><strong>新建文章</strong>：<code>Ctrl + N</code>，或点界面上的新建按钮。</li>
+        <li><strong>写正文</strong>：支持 Markdown 语法（标题、粗体、列表等），<code>Ctrl + S</code> 保存。</li>
+        <li><strong>分类和标签</strong>：写在文章开头的属性区，用于之后的筛选。</li>
+        <li><strong>草稿保护</strong>：编辑过程中自动保存草稿，误关窗口不丢字。</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>4. 整理与回看</h2>
+      <ul>
+        <li><strong>搜索</strong>：<code>Ctrl + F</code> 聚焦搜索框，按标题、正文、标签全文检索。</li>
+        <li><strong>筛选</strong>：按分类、标签一键过滤，快速翻找同类文章。</li>
+        <li><strong>写作日历</strong>：首页的日历图记录每天的写作字数，回看自己的坚持。</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>5. 数据安全</h2>
+      <ul>
+        <li><strong>自动备份</strong>：每次编辑保存前，原文件会备份到文章文件夹下的 <code>.selfrblog-backups/</code>。</li>
+        <li><strong>回收站</strong>：删除的文章进入 <code>.selfrblog-trash/</code>，不会立即消失，可自行找回。</li>
+        <li><strong>不联网</strong>：字己不会把你的文字上传到任何服务器。</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>6. 常见问题</h2>
+      <dl class="faq">
+        <dt>换电脑了，文章怎么办？</dt>
+        <dd>把文章文件夹整个复制到新电脑，在新装的字己里选择这个文件夹，所有文章原样出现。</dd>
+        <dt>可以用其他软件编辑这些文章吗？</dt>
+        <dd>可以。文章就是普通的 Markdown 文件，Typora、VS Code 等任何编辑器都能打开，互不干扰。</dd>
+        <dt>字己会收集我的数据吗？</dt>
+        <dd>不会。无账号、无联网上报，所有数据只存在于你的电脑里。</dd>
+        <dt>如何更新到新版本？</dt>
+        <dd>下载新版安装包直接安装覆盖即可，文章文件夹和配置不受影响。</dd>
+      </dl>
+    </section>
+
+    <div class="guide-cta">
+      <a class="btn-primary" href="https://github.com/selfr7/ziji-releases/releases/latest" target="_blank" rel="noopener">下载最新版</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>字己 · 私人的文字档案馆 · <a href="https://github.com/selfr7/ziji-releases" target="_blank" rel="noopener">GitHub</a> · MIT License</p>
+  </footer>
+
+</body>
+</html>
